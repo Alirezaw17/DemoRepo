@@ -5,7 +5,10 @@ git branch:
 
 
 2. 
-git checkout -branch (name of the branch):
+    git checkout -branch (name of the branch):
 - ex. git checkout -b feature-readme-instructions
 
 3. git checkout (name of that branch) => for switching between branches.
+
+4. git merge   --- but before we can use git diff
+    
