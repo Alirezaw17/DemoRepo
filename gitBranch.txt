@@ -11,4 +11,6 @@ git branch:
 3. git checkout (name of that branch) => for switching between branches.
 
 4. git merge   --- but before we can use git diff
-    
+
+5. delete branch: 
+git branch -d (name of the branch)    
