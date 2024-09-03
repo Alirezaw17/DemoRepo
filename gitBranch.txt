@@ -19,7 +19,7 @@ git branch -d (name of the branch)
 
 7. some commands for undoing things in git:
 
-    - to cancel add => git reset
+    - to cancel add => git reset or git reset (name of the file)
     - to cancel commit => git reset HEAD~1 (BEFORE LAST COMMIT).
 
     example: 
@@ -72,3 +72,6 @@ git branch -d (name of the branch)
     PS C:\Users\Alire\OneDrive\Desktop\fromLocalToRemote>
 
     SO NOW THE FILE HAS YET TO BE COMMITTED.
+
+8. to change or delete a specific commit:
+use => git log
