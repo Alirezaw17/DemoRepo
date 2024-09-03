@@ -16,3 +16,59 @@ git branch:
 git branch -d (name of the branch)    
 
 6. add and commit simultaneously only for modified files not added ones.
+
+7. some commands for undoing things in git:
+
+    - to cancel add => git reset
+    - to cancel commit => git reset HEAD~1 (BEFORE LAST COMMIT).
+
+    example: 
+
+
+    FIRST I CHECKED THE STATUS:
+            PS C:\Users\Alire\OneDrive\Desktop\fromLocalToRemote> git status 
+    On branch main
+    Your branch is up to date with 'origin/main'.
+
+    Changes not staged for commit:
+    (use "git add <file>..." to update what will be committed)
+    (use "git restore <file>..." to discard changes in working directory)
+            modified:   gitBranch.txt
+
+    no changes added to commit (use "git add" and/or "git commit -a")
+
+
+    2. THEN I ADDED THE FILE:
+
+
+    PS C:\Users\Alire\OneDrive\Desktop\fromLocalToRemote> git add gitBranches.txt
+    fatal: pathspec 'gitBranches.txt' did not match any files
+    PS C:\Users\Alire\OneDrive\Desktop\fromLocalToRemote> git add gitBranch.txt
+    PS C:\Users\Alire\OneDrive\Desktop\fromLocalToRemote> git status
+    On branch main
+    Your branch is up to date with 'origin/main'.
+
+    Changes to be committed:
+    (use "git restore --staged <file>..." to unstage)
+            modified:   gitBranch.txt
+
+
+
+    3. THEN I RESETED THE FILE MODIFICATION:        
+
+    PS C:\Users\Alire\OneDrive\Desktop\fromLocalToRemote> git reset
+    Unstaged changes after reset:
+    M       gitBranch.txt
+    PS C:\Users\Alire\OneDrive\Desktop\fromLocalToRemote> git status
+    On branch main
+    Your branch is up to date with 'origin/main'.
+
+    Changes not staged for commit:
+    (use "git add <file>..." to update what will be committed)
+    (use "git restore <file>..." to discard changes in working directory)
+            modified:   gitBranch.txt
+
+    no changes added to commit (use "git add" and/or "git commit -a")
+    PS C:\Users\Alire\OneDrive\Desktop\fromLocalToRemote>
+
+    SO NOW THE FILE HAS YET TO BE COMMITTED.
