@@ -75,3 +75,4 @@ git branch -d (name of the branch)
 
 8. to change or delete a specific commit:
 use => git log
+
